@@ -1,0 +1,186 @@
+Random Forest Scores:
+
+       --- Best Parameters ---
+{'n_estimators': 50, 'min_samples_split': 4, 'max_features': 0.5, 'max_depth': 11, 'criterion': 'entropy'} 
+
+Train Accuracy :  0.8828979591836734
+Test Accuracy :  0.8344761904761905 
+
+     --- Classification Metrics (Test Set) ---
+             precision    recall  f1-score   support
+
+       High       0.80      0.82      0.81      3902
+        Low       0.94      0.89      0.91     13224
+        Med       0.57      0.68      0.62      3874
+
+avg / total       0.85      0.83      0.84     21000
+
+[[0.81624808 0.01768324 0.16606868]
+ [0.01497278 0.88634301 0.09868421]
+ [0.15462055 0.16959215 0.6757873 ]]
+Random Forest Scores:
+
+       --- Best Parameters ---
+{'n_estimators': 50, 'min_samples_split': 4, 'max_features': 0.5, 'max_depth': 11, 'criterion': 'entropy'} 
+
+Train Accuracy :  0.8828979591836734
+Test Accuracy :  0.8344761904761905 
+
+     --- Classification Metrics (Test Set) ---
+             precision    recall  f1-score   support
+
+       High       0.80      0.82      0.81      3902
+        Low       0.94      0.89      0.91     13224
+        Med       0.57      0.68      0.62      3874
+
+avg / total       0.85      0.83      0.84     21000
+
+[[0.81624808 0.01768324 0.16606868]
+ [0.01497278 0.88634301 0.09868421]
+ [0.15462055 0.16959215 0.6757873 ]]
+Random Forest Score (Even bins)
+
+       --- Best Parameters ---
+{'n_estimators': 50, 'min_samples_split': 6, 'max_features': 1.0, 'max_depth': 11, 'criterion': 'entropy'} 
+
+Train Accuracy :  0.9434489795918367
+Test Accuracy :  0.9234761904761905 
+
+     --- Classification Metrics (Test Set) ---
+             precision    recall  f1-score   support
+
+       High       0.72      0.73      0.73       473
+        Low       0.99      0.94      0.96     19492
+        Med       0.38      0.76      0.51      1035
+
+avg / total       0.95      0.92      0.93     21000
+
+[[0.11225013 0.44054331 0.44720656]
+ [0.0018905  0.99296733 0.00514217]
+ [0.00309757 0.93546722 0.06143521]]
+Log Reg Scores:
+
+       --- Best Parameters ---
+{'lr__penalty': 'l2', 'lr__C': 1.0} 
+
+Train Accuracy :  0.8166734693877551
+Test Accuracy :  0.8127142857142857 
+
+     --- Classification Metrics (Test Set) ---
+             precision    recall  f1-score   support
+
+       High       0.74      0.83      0.78      3902
+        Low       0.91      0.90      0.90     13224
+        Med       0.55      0.49      0.52      3874
+
+avg / total       0.81      0.81      0.81     21000
+
+[[0.82880574 0.03357253 0.13762173]
+ [0.01905626 0.90282819 0.07811555]
+ [0.22792979 0.28316985 0.48890036]]
+Log Reg with PCA Scores:
+
+       --- Best Parameters ---
+{'pca__n_components': 15, 'lr__penalty': 'l2', 'lr__C': 1.0} 
+
+Train Accuracy :  0.8015714285714286
+Test Accuracy :  0.8034761904761905 
+
+     --- Classification Metrics (Test Set) ---
+             precision    recall  f1-score   support
+
+       High       0.69      0.85      0.76      3902
+        Low       0.89      0.92      0.90     13224
+        Med       0.56      0.35      0.43      3874
+
+avg / total       0.79      0.80      0.79     21000
+
+[[0.84572014 0.05253716 0.1017427 ]
+ [0.02639141 0.9243043  0.0493043 ]
+ [0.29788332 0.35363965 0.34847703]]
+
+LogReg Coeffs Table:                                   Feature         High          Low          Med
+0                          campaign_size    -0.000188    -0.006772     0.005267
+1                        unique_user_cnt    -0.030531     0.003804     0.008666
+2                   avg_domain_read_rate   643.933162  -801.376251 -1388.049233
+3                  avg_domain_inbox_rate   557.313850  -649.154195   987.035487
+4                 avg_user_avg_read_rate   548.830180 -3698.640958  1000.000000
+5          avg_user_domain_avg_read_rate  1000.000000 -4584.370444  -533.812464
+6                           mb_superuser   683.736912   191.683266  -351.113821
+7                              mb_engper    22.058355   697.084191    -1.094298
+8                            mb_supersub  -153.915992   623.927854    98.209911
+9                              mb_engsec  -226.457417   613.630976    87.344702
+10                              mb_inper  -159.682509   895.636126  -815.680194
+11                              mb_insec  -547.181642  1000.000000  -359.060351
+12                           mb_unengsec  -293.067307   646.539089  -124.200659
+13                            mb_idlesub     1.561161  -108.945774   -86.291501
+14                                   Fri  -116.824186   125.491733   -78.083481
+15                                   Mon   -71.269726    56.704845   -87.464954
+16                                   Sat  -115.690172   133.269971   -94.139271
+17                                   Sun  -106.721191   128.591741  -110.691397
+18                                 Thurs   -72.387632    74.200326   -88.360413
+19                                  Tues   -68.226124    71.360617   -97.560893
+20                                   Wed   -70.991597    74.300348   -95.396786
+21                                 DE_au   -43.803827   149.529331   -87.763074
+22                                DE_com   -86.512504     2.263292  -100.627393
+23                                DE_edu     2.674431   -88.572704   -16.644318
+24                              DE_email     0.207972    -0.150801    -7.726410
+25                                DE_gov    -4.740651     6.535451   -49.018454
+26                               DE_info  -187.493723    97.786828  -285.268481
+27                                 DE_mx   -18.290181   376.723404   175.460305
+28                                DE_org   -87.610832   -33.389684  -120.208917
+29                              DE_other  -128.641367    40.160978   -69.380013
+30                                 DE_uk   -67.899947   113.033486   -90.520441
+31  FDH_21f9e3c73417dc05c54aff76f74a9a68   -24.237995  -135.085720  -296.383295
+32  FDH_50cd1a9a183758039b0841aa738c3f0b  -120.040985   163.160096   160.926252
+33  FDH_636ae4d78ec2b46248fc59ac1ad737df  -212.106933  -108.136936  -362.341233
+34  FDH_6fd3469028bce958da6d575e521235d5    -7.590527   323.591782  -154.186703
+35  FDH_994d7742b95a156e7d9d870376a52784   -16.274074   650.227672    44.987955
+36  FDH_a8ffaf142026e1b237e46bf60c855411   -18.016543   380.612525   361.594242
+37  FDH_c54e4e5635912ef26f54b51cd9a13fa6    10.851151   -65.080949  -369.885328
+38  FDH_d30663cb0bed60805ad3ae4ebbad217b   -58.585738  -240.663694  -167.210676
+39  FDH_f74d39fa044aa309eaea14b9f57fe79c  -133.811246   -17.000348   103.821378
+40                             FDH_other   -42.297738  -287.704848    26.980212
+
+DC/RF Feature importances:                                   Feature  Importance
+0                          campaign_size    3.735318
+1                        unique_user_cnt    4.376545
+2                   avg_domain_read_rate   22.141447
+3                  avg_domain_inbox_rate   10.778837
+4                 avg_user_avg_read_rate   14.250964
+5          avg_user_domain_avg_read_rate  100.000000
+6                           mb_superuser    3.438753
+7                              mb_engper    2.091490
+8                            mb_supersub    1.871990
+9                              mb_engsec    1.186697
+10                              mb_inper    1.252484
+11                              mb_insec    6.116091
+12                           mb_unengsec    1.929476
+13                            mb_idlesub    0.134115
+14                                   Fri    0.156757
+15                                   Mon    0.191760
+16                                   Sat    0.127675
+17                                   Sun    0.175668
+18                                 Thurs    0.177192
+19                                  Tues    0.080993
+20                                   Wed    0.229107
+21                                 DE_au    0.080123
+22                                DE_com    0.200751
+23                                DE_edu    0.063260
+24                              DE_email    0.000000
+25                                DE_gov    0.000000
+26                               DE_info    0.059383
+27                                 DE_mx    0.000000
+28                                DE_org    0.071408
+29                              DE_other    0.126237
+30                                 DE_uk    0.065234
+31  FDH_21f9e3c73417dc05c54aff76f74a9a68    0.000000
+32  FDH_50cd1a9a183758039b0841aa738c3f0b    0.662933
+33  FDH_636ae4d78ec2b46248fc59ac1ad737df    0.000000
+34  FDH_6fd3469028bce958da6d575e521235d5    0.000000
+35  FDH_994d7742b95a156e7d9d870376a52784    0.000000
+36  FDH_a8ffaf142026e1b237e46bf60c855411    0.000000
+37  FDH_c54e4e5635912ef26f54b51cd9a13fa6    0.000000
+38  FDH_d30663cb0bed60805ad3ae4ebbad217b    0.000000
+39  FDH_f74d39fa044aa309eaea14b9f57fe79c    0.123193
+40                             FDH_other    1.259607
